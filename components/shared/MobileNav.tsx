@@ -1,12 +1,12 @@
 "use client"
 
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { navLinks } from "@/constants"
-import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs"
-import Image from "next/image"
-import Link from "next/link"
-import { usePathname } from "next/navigation"
-import { Button } from "../ui/button"
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { navLinks } from "@/constants";
+import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { Button } from "../ui/button";
 
 const MobileNav = () => {
   const pathname = usePathname();
@@ -15,7 +15,7 @@ const MobileNav = () => {
     <header className="header">
       <Link href="/" className="flex items-center gap-2 md:py-2">
         <Image
-          src="/assets/images/logo-text.svg"
+          src="/assets/images/logo-text.png"
           alt="logo"
           width={180}
           height={28}
@@ -82,4 +82,4 @@ const MobileNav = () => {
   )
 }
 
-export default MobileNav
+export default MobileNav;
